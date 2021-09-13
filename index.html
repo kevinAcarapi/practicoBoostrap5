@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta etiqueta requerida -->
+    <meta charset="UTF-8">
+    <!-- Meta etiqueta requerida -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Meta etiqueta requerida -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titulo de mi pestaña -->
+    <title>ITS Villa el Libertador</title>
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- Cuerpo de la página -->
+<body>
+
+    <!-- Contenedor que ocupa el 100% de mi pantalla -->
+    <div class="container-fuild">
+        <!-- Mi header -->
+        <header id="header">
+            <!-- Fila -->
+            <div class="row">
+                <!-- Navbar -->
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <!-- Logo de mi página -->
+                        <a class="navbar-brand" href="#">
+                            <img class= "logo" src="img/logo-azul.jpg" alt="Logo">
+                        </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <!-- Item -->
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                          </li>
+                          <!-- Item con opciones desplegables-->
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Software
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Plan de estudios</a></li>
+                              <li><a class="dropdown-item" href="#">Asignaturas</a></li>
+                              <li><a class="dropdown-item" href="#">Horarios</a></li>
+                            </ul>
+                          </li>
+                          <!-- Item con opciones desplegables-->
+                          <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Enfermería
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Plan de estudios</a></li>
+                              <li><a class="dropdown-item" href="#">Asignaturas</a></li>
+                              <li><a class="dropdown-item" href="#">Horarios</a></li>
+                            </ul>
+                            <!-- Item -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contactos</a>
+                            </li>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+            </div>
+        </header>
+
+        <!-- Mi main -->
+        <main id="main">
+            <!-- Sección carousel -->
+            <section class="carousel mt-3 mb-3">
+                <!-- Fila -->
+                <div class="row">
+                    <!-- Utilizo flex para centrar mi carousel  -->
+                    <div class="d-flex justify-content-center p-0">
+                        <!-- Mi carousel -->
+                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- carousel 1 -->
+                              <div class="carousel-item active">
+                                <img src="img/c1.jpg" class="d-block w-100" alt="carousel 1">
+                              </div>
+                              <!-- carousel 2 -->
+                              <div class="carousel-item">
+                                <img src="img/c2.jpg" class="d-block w-100" alt="carousel 2">
+                              </div>
+                              <!-- carousel 3 -->
+                              <div class="carousel-item">
+                                <img src="img/c3.jpg" class="d-block w-100" alt="carousel 3">
+                              </div>
+                              <!-- carousel 4 -->
+                              <div class="carousel-item">
+                                <img src="img/c4.jpg" class="d-block w-100" alt="carousel 4">
+                              </div>
+                            </div>
+                            <!-- boton para pasar al anterior carousel -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <!-- boton para pasar al siguiente carousel -->
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección carreras -->
+            <section id="carreras">
+              <!-- Fila -->
+                <div class="row mb-2">
+                    <!-- Mi título -->
+                    <h2 class="d-flex justify-content-center bg-dark text-white">Carreras</h2>
+                </div>
+                <!-- Fila -->
+                <div class="row row-cols-1 row-cols-md-2 g-4 mb-3">
+                  <!-- Columna -->
+                  <div class="col">
+                    <div class="card">
+                      <img src="img/software.jpg" class="card-img-top carreraSoftware" alt="Logo de software">
+                      <div class="card-body">
+                        <h5 class="card-title">Tecnicatura Superior en Desarrollo de Software</h5>
+                        <p class="card-text">Una carrera con gran salida laboral.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoSoft">
+                          Más info
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Columna -->
+                  <div class="col">
+                    <div class="card">
+                      <img src="img/enfermeria.jpg" class="card-img-top carreraEnfermeria" alt="Logo de enfermeria">
+                      <div class="card-body">
+                        <h5 class="card-title">Tecnicatura Superior en Enfermería</h5>
+                        <p class="card-text">Una carrera con gran demanda.</p>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoEnfer">
+                          Más info
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Fila -->
+                <div class="row mb-2">
+                  <!-- Mi título -->
+                  <h2 class="d-flex justify-content-center bg-dark text-white">Información</h2>
+                </div>
+                <!-- Fila -->
+                <div class="row">
+                  <!-- Columna -->
+                  <div class="col-sm-5">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Datos</button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Contacto</button>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Columna -->
+                  <div class="col-sm-6">
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <ul class="list-group">
+                          <li class="list-group-item">Escuela Marta Juana Gonzales</li>
+                          <li class="list-group-item">Dirección: Defensa esq. Bermejo, Villa el Libertador</li>
+                          <li class="list-group-item">Linea de colectivo: 33</li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <!-- Formulario -->
+                        <form>
+                          <div class="mb-3">
+                            <label for="Nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="Nombre" placeholder="Nombre">
+                          </div>
+                          <div class="mb-3">
+                            <label for="Email" class="form-label">E-mail</label>
+                            <input type="email" class="form-control" id="email" placeholder="Correo electronico">
+                          </div>
+                          <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Comentarios</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="modal fade" id="infoSoft" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Desarrollo de Software</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        El Técnico Superior en Desarrollo de Software estará capacitado para producir componentes
+                        de software, lo que comprende su diseño detallado, construcción y realización de
+                        verificación unitaria de los mismos, así como su depuración, optimización y mantenimiento;
+                        desarrollando las actividades descriptas en el perfil profesional y cumpliendo con los criterios de realización establecidos para las mismas en el marco de un equipo de trabajo organizado por proyecto.
+                        Se establecen como alcances para el Técnico de Desarrollo de Software:
+                        <ul>
+                          <li>
+                            “ Modelizar y construir artefactos de software a partir de especificaciones.”
+                          </li>
+                          <li>
+                            “Verificar la calidad de artefactos de software, diseñando casos de prueba unitarios y
+                            de integración.”
+                          </li>
+                          <li>
+                            “Optimizar y depurar código de artefactos de software para resolver defectos o
+                            mejorarlos.” 
+                          </li>
+                          <li>
+                              “Documentar en base a normas y estándares establecidos.” 
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div class="modal fade" id="infoEnfer" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Desarrollo de Software</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        Del analisis de las actividades profesionales que se desprenden del perfil profesional, se establecen como habilitaciones para el Tecnico Superior en Enfermería
+                        <ul>
+                          <li>
+                            Desarrollar y gestionar cuidados de enfermeria para la promocion, prevencion y recupracion hasta el nivel de complejidad intermedio con la comunidad.
+                          </li>
+                          <li>
+                            Brincan y gestionar cuidado de enfermeria en el ambito hospitalario hasta el nivel de cuidados intermedios.
+                          </li>
+                          <li>
+                            Gestionar su ambito de trabajo ya sea en relacion de dependencia o en forma libre.
+                          </li>
+                          <li>
+                              Participar en estudios de investigacion/accion.
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+    
+</body>
+</html>

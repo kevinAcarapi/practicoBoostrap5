@@ -1,0 +1,19 @@
+/* Importo google fonts */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+/* Estilos al cuerpo la página */
+body {
+    /* estilo de letra */
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Ingreso al logo */
+nav div a > .logo {
+    /* cambio a forma redondeada mi logo */
+    border-radius: 50%;
+}
+/* Ingreso al titulo h2 */
+#carreras .row > h2 {
+    /* Cambio el tamaño de la letra */
+    font-size: 3rem;
+}
